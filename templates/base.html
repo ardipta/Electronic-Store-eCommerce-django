@@ -1,0 +1,53 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Custom Theme files -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{% static 'css/fasthover.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{% static 'css/popuo-box.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <!-- //Custom Theme files -->
+    <!-- font-awesome icons -->
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <link rel="stylesheet" href="{% static 'css/jquery.countdown.css' %}" /> <!-- countdown -->
+    <!-- //js -->
+    <!-- web fonts -->
+    <link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- //web fonts -->
+    <title>Document</title>
+</head>
+<body>
+
+{% include 'partials/_topbar.html' %}
+{% include 'partials/_navbar.html' %}
+{% include 'partials/_banner.html' %}
+
+{% block content %}{% endblock %}
+
+{% include 'partials/_footer.html' %}
+
+
+<!-- js -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<!-- for bootstrap working -->
+<script type="text/javascript" src="{% static 'js/bootstrap-3.1.1.min.js' %}"></script>
+<!-- //for bootstrap working -->
+<script src="{% static 'js/easyResponsiveTabs.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/minicart.js' %}"></script>
+<script src="{% static 'js/app.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.flexisel.js' %}"></script>
+<script src="{% static 'js/jquery.countdown.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/jquery.wmuSlider.js' %}"></script>
+<!-- pop-up-box -->
+<script src="{% static 'js/jquery.magnific-popup.js' %}" type="text/javascript"></script>
+<!--//pop-up-box -->
+</body>
+</html>
