@@ -15,3 +15,5 @@ def about(request):
 
 def mail(request):
     return render(request, 'pages/mail.html')
+
+
