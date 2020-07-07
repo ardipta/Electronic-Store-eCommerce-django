@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from computers.models import Desktop, Laptop
+
+admin.site.register(Laptop)
+admin.site.register(Desktop)
